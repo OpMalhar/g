@@ -1,0 +1,83 @@
+ 
+<html>
+  <head>
+    <title>Hand Gesture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+    <h1 class="btn btn-warning heading">Hanture
+      <br>
+      &#9756;
+     <span>
+      
+      👌
+      
+      &#128076;
+      
+      👍
+      
+      &#128077;
+      
+      
+      🤘
+      
+      &#128077;
+      </span>
+      
+              </h1>
+      <br><br>
+
+      <p style="font-size: 22px;">Take your image from above and follow 
+      	<br>
+        <b style="color: yellow">Are you Amazing?</b>
+        <br>
+        <b style="color: black">Are you Cool?</b>
+        <br>
+        <b style="color: red">Are you Swagger?</b>
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Webcam View - </label>
+         <div id="camera"></div>
+        <br><br>
+        <button id="vid" class="btn btn-danger" onclick="Ci()">Capture Gesture</button>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Prediction 1 - </label>
+       <div id="emname" class="emotion_name"></div>
+       <div id="emo" class="emoji"></div>
+        <br><br>
+        <label>Prediction 2 - </label>
+       <div id="emname2" class="emotion_name"></div>
+       <div id="emo2" class="emoji"></div>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="result"></div>
+        <br><br>
+       <button id="nottub" class="btn btn-primary" onclick="Ii()">Identify Gesture</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
